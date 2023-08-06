@@ -1,0 +1,13 @@
+name: LuckyVotes
+version: '${version}'
+main: nl.chimpgamer.luckyvotes.LuckyVotes
+api-version: '1.20'
+loader: nl.chimpgamer.luckyvotes.LuckyVotesLoader
+
+authors:
+  - ChimpGamer
+
+dependencies:
+  - name: UltimateVotes
+    required: false
+    bootstrap: false
