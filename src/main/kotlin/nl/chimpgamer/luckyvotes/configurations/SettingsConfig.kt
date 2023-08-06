@@ -19,6 +19,8 @@ class SettingsConfig(private val plugin: LuckyVotesPlugin) {
         }
     }
 
+    val luckyAnnouncement: String get() = config.getString("lucky_announcement")
+
     init {
         val file = plugin.dataFolder.resolve("settings.yml")
         val inputStream = plugin.getResource("settings.yml")

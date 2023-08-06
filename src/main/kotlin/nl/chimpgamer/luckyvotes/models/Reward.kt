@@ -1,8 +1,10 @@
 package nl.chimpgamer.luckyvotes.models
 
+import org.bukkit.Bukkit
+import org.bukkit.entity.Player
 import kotlin.random.Random
 
-data class Reward(
+class Reward(
     val id: String,
     val chance: Int,
     val permission: String? = null,
@@ -10,6 +12,14 @@ data class Reward(
     val message: String? = null
 ) {
     fun success(): Boolean = if (chance > 0) chance >= Random.nextInt(100) else true
+
+    fun hasPermission(player: Player) = permission == null || player.hasPermission(permission)
+
+    fun executeCommands(player: Player) {
+        commands.forEach { command ->
+            Bukkit.dispatchCommand(Bukkit.getConsoleSender(), command.replace("%player%", player.name))
+        }
+    }
 
     companion object {
         fun deserialize(id: String, map: Map<String, Any>): Reward {

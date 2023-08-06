@@ -16,7 +16,7 @@ class LuckyVotesCommand(private val plugin: LuckyVotesPlugin) {
             .literal("reload")
             .permission("$basePermission.reload")
             .handler { context ->
-                plugin.settingsConfig.config.reload()
+                plugin.reloadConfigs()
                 context.sender.sendRichMessage("<green>Successfully reloaded the settings!")
             }
         )

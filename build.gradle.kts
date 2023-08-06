@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "nl.chimpgamer"
-version = "1.0.0-SNAPSHOT"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
@@ -17,6 +17,8 @@ dependencies {
     compileOnly("dev.dejvokep:boosted-yaml:1.3.1")
     compileOnly("cloud.commandframework:cloud-paper:1.8.3")
     compileOnly("cloud.commandframework:cloud-minecraft-extras:1.8.3")
+
+    compileOnly(fileTree("libs"))
 }
 
 java {

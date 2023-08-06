@@ -4,5 +4,8 @@ rewards:
     permission: null
     commands:
       - give %player% cooked_beef 10
+    message: 'You were lucky and received 10 Steak!'
+
+lucky_announcement: '<displayname> was lucky and received a extra reward for voting!'
 
 config-version: 1

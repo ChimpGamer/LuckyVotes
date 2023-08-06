@@ -1,7 +1,7 @@
 name: LuckyVotes
 version: '${version}'
-main: nl.chimpgamer.luckyvotes.LuckyVotes
-api-version: '1.20'
+main: nl.chimpgamer.luckyvotes.LuckyVotesPlugin
+api-version: '1.19'
 loader: nl.chimpgamer.luckyvotes.LuckyVotesLoader
 
 authors:
