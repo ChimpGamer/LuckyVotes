@@ -1,0 +1,8 @@
+rewards:
+  default:
+    chance: 75
+    permission: null
+    commands:
+      - give %player% cooked_beef 10
+
+config-version: 1

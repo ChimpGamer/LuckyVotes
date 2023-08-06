@@ -13,6 +13,10 @@ repositories {
 
 dependencies {
     compileOnly("io.papermc.paper:paper-api:1.20.1-R0.1-SNAPSHOT")
+
+    compileOnly("dev.dejvokep:boosted-yaml:1.3.1")
+    compileOnly("cloud.commandframework:cloud-paper:1.8.3")
+    compileOnly("cloud.commandframework:cloud-minecraft-extras:1.8.3")
 }
 
 java {
