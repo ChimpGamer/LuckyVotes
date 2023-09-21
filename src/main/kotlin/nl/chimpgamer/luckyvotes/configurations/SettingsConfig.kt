@@ -9,7 +9,7 @@ import dev.dejvokep.boostedyaml.settings.updater.UpdaterSettings
 import nl.chimpgamer.luckyvotes.LuckyVotesPlugin
 import nl.chimpgamer.luckyvotes.models.Reward
 
-class SettingsConfig(private val plugin: LuckyVotesPlugin) {
+class SettingsConfig(plugin: LuckyVotesPlugin) {
     val config: YamlDocument
 
     val rewards: List<Reward> get() {

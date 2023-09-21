@@ -11,3 +11,6 @@ dependencies:
   - name: UltimateVotes
     required: false
     bootstrap: false
+  - name: VotingPlugin
+    required: false
+    bootstrap: false

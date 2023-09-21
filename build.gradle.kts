@@ -9,6 +9,8 @@ version = "1.0.0"
 repositories {
     mavenCentral()
     maven("https://repo.papermc.io/repository/maven-public/")
+
+    maven("https://nexus.bencodez.com/repository/maven-public/")
 }
 
 dependencies {
@@ -17,6 +19,8 @@ dependencies {
     compileOnly("dev.dejvokep:boosted-yaml:1.3.1")
     compileOnly("cloud.commandframework:cloud-paper:1.8.3")
     compileOnly("cloud.commandframework:cloud-minecraft-extras:1.8.3")
+
+    compileOnly("com.bencodez:votingplugin:6.14")
 
     compileOnly(fileTree("libs"))
 }
