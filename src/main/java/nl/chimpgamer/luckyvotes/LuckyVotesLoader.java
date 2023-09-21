@@ -17,8 +17,8 @@ public class LuckyVotesLoader implements PluginLoader {
         var dependencies = new ArrayList<String>() {{
             add("org.jetbrains.kotlin:kotlin-stdlib:1.9.10");
             add("org.jetbrains.kotlin:kotlin-reflect:1.9.10");
-            add("cloud.commandframework:cloud-paper:1.8.3");
-            add("cloud.commandframework:cloud-minecraft-extras:1.8.3");
+            add("cloud.commandframework:cloud-paper:1.8.4");
+            add("cloud.commandframework:cloud-minecraft-extras:1.8.4");
             add("dev.dejvokep:boosted-yaml:1.3.1");
         }};
 
